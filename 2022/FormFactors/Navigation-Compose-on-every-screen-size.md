@@ -1,7 +1,6 @@
 # Navigation Compose on every screen size
 
 
-
 - navController : navigation의 state 관리 / this is how you navigate between different destinations. and also maintatins the backstack.
 - navigation Graph : navController위한 map 제공 / This is where you define all of your destinations. and how they relate to one another
 - navHost : 지금 뭐할지에 초점이 맞춰져있음. the NavHost is a bounding box container for the part of your UI that should be considered part of navigation
