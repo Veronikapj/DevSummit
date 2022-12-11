@@ -43,7 +43,7 @@ Android 12L and later
 </SplitPlaceholderRule>    
 ```
 
-### SlidingPaineLayout - View based solution
+### SlidingPaneLayout - View based solution
 ![Canonical layouts and visual hierarchy_ Designing for larger screens 8-46 screenshot](https://user-images.githubusercontent.com/360685/206891001-44384476-ec47-4566-a6ec-819e21bd117f.png)
 
 ## 2. Supporting Panel
@@ -54,7 +54,7 @@ Android 12L and later
 If you have a **primary-secondary-conent** relationship within your UI in layouts, supporting panel is a great largescreen optimized layout choice for you 
 
 
-### Compose + TwoPaine
+### Compose + TwoPane
 using Accompanist
 ```kotlin
 //SupportingPanel.kt
@@ -66,13 +66,13 @@ fun SupportingPanel(
     windowSizeClass: WindowSizeClass,
     displayFeatures: List<DisplayFeature>
 ) {
-    TwoPain(
+    TwoPane(
         first = main,
         second = supporting, 
         strategy = when(windowSizeClass.widthSizeClass) {
-            WindowWidthSizeClass.Compact -> VerticalTwoPainStrategy(0.5F)
-            WindowWidthSizeClass.Medium -> HorizontalTwoPainStrategy(0.5F)
-            else -> HoritonzontalTwoPainStrategy(0.7F)
+            WindowWidthSizeClass.Compact -> VerticalTwoPaneStrategy(0.5F)
+            WindowWidthSizeClass.Medium -> HorizontalTwoPaneStrategy(0.5F)
+            else -> HoritonzontalTwoPaneStrategy(0.7F)
         },
         displayFeatures = displayFeatures
     )
