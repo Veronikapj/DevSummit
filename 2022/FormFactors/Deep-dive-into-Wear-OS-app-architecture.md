@@ -5,7 +5,7 @@
 <img width="745" alt="스크린샷 2022-12-11 오후 8 32 12" src="https://user-images.githubusercontent.com/70066242/206901164-ce125ee5-b28e-45c6-b19b-a7999255c102.png">
 
 
-모듈화 장점
+## 모듈화 장점
 
 <img width="704" alt="스크린샷 2022-12-11 오후 8 32 25" src="https://user-images.githubusercontent.com/70066242/206901184-0886888e-f4ea-4bae-bf88-70d37ed26183.png">
 Scalability : 관심사 분리를 수용하며, 사람들이 변화를 만들 수 있도록 권한을 부여
@@ -42,4 +42,6 @@ usecase는 single responsibility 를 갖는다.(SOLID)
 
 Horologist: wear OS 작업 도와주는 Lib. Horologist는 Google에서 제공하는 라이브러리 그룹으로, 개발자에게 일반적으로 필요하지만 아직 Jetpack에서 사용할 수 없는 기능을 제공하여 Wear OS 개발자를 돕는 것을 목표로 합니다.
 
+
+Horologis 깃허브 주소:
 https://github.com/google/horologist
