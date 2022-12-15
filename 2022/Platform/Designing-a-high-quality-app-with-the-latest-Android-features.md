@@ -1,8 +1,7 @@
 ## Designing a high quality app with the latest Android features
 
 .
-
-![image-20221215173940300](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221215173940300.png)
+<img width="729" alt="스크린샷 2022-12-15 오후 5 39 36" src="https://user-images.githubusercontent.com/70066242/207836748-ab58dfe1-9d77-45e8-abb4-88782bb9e834.png">
 
 
 
@@ -18,22 +17,21 @@ WindowInsets(platform API in Android 11+) / WindowInsetsCompat(AndroidX 1.5.0-al
 
 eg. 화면이 내려가면 AppBar 사라짐 / status와 nav bar 색을 동일하게 구성하며 일치된 느낌을 줌
 
-![image-20221215182142404](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221215182142404.png)
 
+<img width="838" alt="스크린샷 2022-12-15 오후 6 21 37" src="https://user-images.githubusercontent.com/70066242/207836889-31abd0fa-392a-4dbc-9edf-1b9a81050881.png">
+<img width="809" alt="스크린샷 2022-12-15 오후 6 26 32" src="https://user-images.githubusercontent.com/70066242/207837001-b012eb13-13ed-4d6e-9081-0d2c3e718255.png">
 
-![image-20221215182641619](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221215182641619.png)
+<img width="372" alt="스크린샷 2022-12-15 오후 6 27 37" src="https://user-images.githubusercontent.com/70066242/207837020-31f9c60d-adc2-427b-96c0-32c4f952379e.png">
 
-![image-20221215182744791](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221215182744791.png)
 
 모바일에서만 사용되는 것이 아니라 폴더블, 태블릿 등 다양하게 적용이 가능하다
-
 
 
 ### Predictive back
 
 android 13으로 넘어오면서 back guesture를 하는 경우, 현재 화면이 작아지는 효과적인 UI를 볼 수 있다.
 
-![image-20221215182949804](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221215182949804.png)
+<img width="766" alt="스크린샷 2022-12-15 오후 6 29 40" src="https://user-images.githubusercontent.com/70066242/207837063-55520fd1-6d7a-4eac-8a35-c919bfb4ef5d.png">
 
 
 Android13
@@ -41,8 +39,8 @@ Android13
 <application
     android: enableOnBackInvokedCallback = "true"> 추가해주기
 
-![image-20221215183309579](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221215183309579.png)
 
+<img width="855" alt="스크린샷 2022-12-15 오후 6 33 03" src="https://user-images.githubusercontent.com/70066242/207837099-c9510e16-72e7-4ee5-baba-a2c0177998b6.png">
 
 
 ### Accessible color system
