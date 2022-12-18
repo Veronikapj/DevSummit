@@ -11,9 +11,10 @@
 
 넓은 핸드폰 화면(폴더블, 테블릿 )
 
-"네비게이션 바를 투명하게 해주세요!" 라는 요청이 있었습니다.
-
-WindowInsets(platform API in Android 11+) / WindowInsetsCompat(AndroidX 1.5.0-alpha01 or higher) / WindowCompat(AndroidX 1.5.0-alpha01 or higher) 를 사용하여 화면을 개발자의 의도대로 구성해줄 수 있습니다. [Android 10,11]
+- WindowInsets(platform API in Android 11+)  
+- WindowInsetsCompat(AndroidX 1.5.0-alpha01 or higher) 
+- WindowCompat(AndroidX 1.5.0-alpha01 or higher) 
+를 사용하여 화면을 개발자의 의도대로 구성해줄 수 있습니다. [Android 10,11]
 
 eg. 화면이 내려가면 AppBar 사라짐 / status와 nav bar 색을 동일하게 구성하며 일치된 느낌을 줌
 
@@ -33,8 +34,11 @@ android 13으로 넘어오면서 back guesture를 하는 경우, 현재 화면�
 
 <img width="766" alt="스크린샷 2022-12-15 오후 6 29 40" src="https://user-images.githubusercontent.com/70066242/207837063-55520fd1-6d7a-4eac-8a35-c919bfb4ef5d.png">
 
+- OnBackInvokedCallback(platform API for Android13)
+- OnBackPressedCallback(AndroidX 1.6.0-alpha05 or higher API)
+- OnBackPressedDispatcher(AndroidX 1.6.0-alpha05 or higher API)
+를 활용하여 구현이 가능합니다 
 
-Android13
 
 <application
     android: enableOnBackInvokedCallback = "true"> 추가해주기
@@ -47,7 +51,8 @@ Android13
 
 Dynamic Color : Material Color에 대해 커스터마이즈가 가능. API for Android 12+
 
-- Aceesble : Disgn for everyone
+- Aceesble : chroma, tone의 변경을 주어 UI에 적용중인 색에 대해 변화를 줄 수 있습니다. 
 - Scalable : Design tokens enable flexiblility and consistency(color 시스템(color token)을 통일하면서 디자이너와 협업이 쉬워짐)
 
-작업 중 입니다..
+![img.png](img.png)
+
