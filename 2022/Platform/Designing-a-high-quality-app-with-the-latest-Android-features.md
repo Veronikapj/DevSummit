@@ -54,5 +54,5 @@ Dynamic Color : Material Color에 대해 커스터마이즈가 가능. API for A
 - Aceesble : chroma, tone의 변경을 주어 UI에 적용중인 색에 대해 변화를 줄 수 있습니다. 
 - Scalable : Design tokens enable flexiblility and consistency(color 시스템(color token)을 통일하면서 디자이너와 협업이 쉬워짐)
 
-![img.png](img.png)
+<img width="431" alt="스크린샷 2022-12-18 오후 8 18 47" src="https://user-images.githubusercontent.com/70066242/208297038-c3304d09-c064-4115-84ce-11159f91daf7.png">
 
