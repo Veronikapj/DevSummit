@@ -4,34 +4,33 @@
 
 - multi buffered rendering : Buffer 2개 -> 시간 소요가 큼
 
-![image-20221218180958604](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218180958604.png)
+
+<img width="843" alt="스크린샷 2022-12-18 오후 6 09 45" src="https://user-images.githubusercontent.com/70066242/208296457-c4941d39-f56b-48aa-b16a-444101d8282d.png">
 
 - Front-Buffered Rendering : Buffer 1개 -> 시간 소요 적음
 1개의 버퍼에서 모든 역할 수행하며, 이상적인 상태이다. Android는 OpenGL을 사용하여, 모든 버전에서 이러한 구현이 가능합니다.
 
-![image-20221218181033703](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218181033703.png)
+<img width="853" alt="스크린샷 2022-12-18 오후 6 10 26" src="https://user-images.githubusercontent.com/70066242/208296463-5009847d-720f-4123-9bf1-f1c8b5f0b7f6.png">
+
 
 - OpenGL(graphic lib) : 2차원 또는 3차원 드로잉을 위한 표준 그래픽스 라이브러리.
 
 
 
-OpenGL 플랫폼에서 지원을 받지 못하여 새로 만들게 되었다.
+OpenGL 플랫폼에서 지원을 받지 못하여 새로 만들게 되었습니다.
 
-Android 13+ 에서는 'Front-Buffered Platform Support' 사용
+Android 13+ 에서는 'Front-Buffered Platform Support' 사용!
 
 Front-Buffered Platform Support를 사용함으로써 OpenGL을 통합할 필요가 없게 되었습니다.
 
 
 추가적으로 'Low-Latency Jetpack library' 적용하여 이전 버전과 호환될 수 있게끔 사용할 수 있습니다. 
 
-Low-Latency Jetpack library
 
-- An easy way to implement stylus-friendly surfaces
-- Best possible solution and latency for the version of Android You're running on
+<img width="827" alt="스크린샷 2022-12-18 오후 7 00 44" src="https://user-images.githubusercontent.com/70066242/208296474-7ecbdee4-50c9-40e9-8fe1-fe7e23891cd4.png">
 
-![image-20221218190054915](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218190054915.png)
 
-Active Stroke Layer에서 그려진 후, 밑에 바닥으로 그려진 것이 옮겨지게 됩니다.
+▲ Active Stroke Layer에서 그려진 후, 밑에 바닥으로 그려진 것이 옮겨지게 됩니다.
 
 
 
@@ -39,7 +38,7 @@ Active Stroke Layer에서 그려진 후, 밑에 바닥으로 그려진 것이 �
 
 Android 12+
 
-![image-20221218190438882](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218190438882.png)
+<img width="696" alt="스크린샷 2022-12-18 오후 7 04 28" src="https://user-images.githubusercontent.com/70066242/208296488-10939c68-09a1-48e7-9be8-58ecdb3fd963.png">
 
 
 Paint attributes
@@ -61,7 +60,11 @@ RenderEffect (Android 12+ ) : RenderEffect를 사용하면 더욱 간편하게 �
     - RenderEffects for bitmaps, color, filters, blending
     - ... and Blur
 
-![image-20221218191220279](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218191220279.png)
+
+<img width="219" alt="스크린샷 2022-12-18 오후 7 12 03" src="https://user-images.githubusercontent.com/70066242/208296496-32d7162d-9cd1-4cf2-8aab-ef87d04412ed.png">
+
+▲ blur를 사용했을 때의 이미지 
+
 
 ```kotlin
 // RenderEffect Blur
@@ -107,7 +110,7 @@ TextureView : content streaming을 보여줄 때 사용하며, 회전 처리에 
     - content is drawn to offscreen buffer
     - offscreen buffer is then copied into view hierarchy
 
-We Recommend SurfaceView
+We Recommend SurfaceView!!
 
 - DRM으로 보호된 동영상은 오버레이 창에만 표시할 수 있습니다. 보호된 콘텐츠를 지원하는 동영상 플레이어는 SurfaceView로 구현해야 합니다.
 - 게임은 자체 컨텐츠 생산은 SurfaceView을 통해 컨트롤할 수 있습니다.
@@ -123,9 +126,9 @@ Android 13+
 
 pixel shader : 최종 색상 값을 계산하기 위해 렌더링 표면의 모든 픽셀에 대해 실행되는 코드
 
-![image-20221218191901912](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218191901912.png)
+<img width="781" alt="스크린샷 2022-12-18 오후 7 18 48" src="https://user-images.githubusercontent.com/70066242/208296555-e3a02b74-484c-40ba-b706-61a0e8331081.png">
 
-SKSL 사용 예시
+▲ SKSL 사용 예시
 
 
 
@@ -138,7 +141,7 @@ AGSL in Android 13+
     - (Skia already uses shaders internalliy)
 
 
-![image-20221218193616239](/Users/kwonhyeokjun/Library/Application Support/typora-user-images/image-20221218193616239.png)
+<img width="781" alt="스크린샷 2022-12-18 오후 7 36 05" src="https://user-images.githubusercontent.com/70066242/208296563-a95d718c-1cd2-4836-9604-f02209356bdf.png">
 
 
 
